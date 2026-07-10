@@ -1,29 +1,28 @@
-# A.V.A.T.A.R-plugin-Horoscope
+# A.V.A.T.A.R-plugin-programmeTV
 
 - This plugin is an add-on for the [A.V.A.T.A.R](https://avatar-home-automation.github.io/docs) framework. 
 
-- Avatar donne les signes astrologique pour le jour et demain
 
  ## 🎯 Usage
 Commandes :
-- quel est l'horoscope du sagitaire
-- donne moi l'horoscope du sagitaire
-- l'horoscope du lion pour demain
+- il y'a quoi a la télé en ce moment ou ce soir
+- les programme télé en ce moment ou ce soir
+- il y'a quoi a la télé en ce moment sur tf1 ou ce soir sur tf1
 
 ## Multi-room
 
-The `Horoscope` plugin is fully multi-room.
+The `programmeTV` plugin is fully multi-room.
 
 ## Multi-language
 
-The `Horoscope` plugin relies solely on the system's available languages.
+The `programmeTV` plugin relies solely on the system's available languages.
 
  <table style="border: none;">
   <tr>
-    <td style="border: none;"><img src="Horoscope/assets/images/Horoscope.png" alt="Horoscope Logo" width="120"></td>
+    <td style="border: none;"><img src="programmeTV/assets/images/programmeTV.png" alt="programmeTV Logo" width="120"></td>
     <td style="border: none;">
-      <h1 style="margin: 0;color: brown;">Horoscope</h1>
-      <h3 style="margin: 0;">Give Signs</h3>
+      <h1 style="margin: 0;color: brown;">programmeTV</h1>
+      <h3 style="margin: 0;">Get Program Tv</h3>
     </td>
   </tr>
 </table>
