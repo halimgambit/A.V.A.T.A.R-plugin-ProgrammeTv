@@ -1,4 +1,4 @@
-# A.V.A.T.A.R-plugin-ProgrammeTV
+# A.V.A.T.A.R-plugin-ProgrammeTv
 
 Consultez votre programme TV de ce soir et en ce moment
 
@@ -13,17 +13,17 @@ Commandes :
 
 ## Multi-room
 
-The `ProgrammeTV` plugin is fully multi-room.
+The `ProgrammeTv` plugin is fully multi-room.
 
 ## Multi-language
 
-The `ProgrammeTV` plugin relies solely on the system's available languages.
+The `ProgrammeTv` plugin relies solely on the system's available languages.
 
  <table style="border: none;">
   <tr>
-    <td style="border: none;"><img src="ProgrammeTV/assets/images/ProgrammeTV.png" alt="ProgrammeTv Logo" width="120"></td>
+    <td style="border: none;"><img src="ProgrammeTv/assets/images/ProgrammeTv.png" alt="ProgrammeTv Logo" width="120"></td>
     <td style="border: none;">
-      <h1 style="margin: 0;color: brown;">ProgrammeTV</h1>
+      <h1 style="margin: 0;color: brown;">ProgrammeTv</h1>
       <h3 style="margin: 0;">Get Program Tv</h3>
     </td>
   </tr>
