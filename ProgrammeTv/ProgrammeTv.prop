@@ -26,7 +26,7 @@
   "tf1 série": "TF1SeriesFilms.fr"
 },
       "rules": {
-        "getProgramme": ["the tv * (program|programs)","what is on tv"]
+        "getProgramme": ["tv * (program|programs)","(program|programs) * tv","what is on tv"]
       }
     }
   }
