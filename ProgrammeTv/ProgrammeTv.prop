@@ -1,0 +1,33 @@
+{
+  "modules": {
+    "ProgrammeTv": {
+      "version": "1.0",
+      "name": "programme-télé",
+      "active": true,
+     "CHANNELS_MAP": {
+  "tf1": "TF1.fr",
+  "france 2": "France2.fr",
+  "france 3": "France3.fr",
+  "france 4": "France4.fr",
+  "france 5": "France5.fr",
+  "m6": "M6.fr",
+  "arte": "Arte.fr",
+  "w9": "W9.fr",
+  "tmc": "TMC.fr",
+  "nt1": "NT1.fr",
+  "6ter": "6ter.fr",
+  "lci": "LCI.fr",
+  "lcp": "LaChaineParlementaire.fr",
+  "bfm tv": "BFMTV.fr",
+  "cnews": "CNews.fr",
+  "cstar": "CStar.fr",
+  "gulli": "Gulli.fr",
+  "canal+": "CanalPlus.fr",
+  "tf1 série": "TF1SeriesFilms.fr"
+},
+      "rules": {
+        "getProgramme": ["the tv * (program|programs)","what is on tv"]
+      }
+    }
+  }
+}

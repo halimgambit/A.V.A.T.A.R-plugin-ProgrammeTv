@@ -1,0 +1,10 @@
+{
+  "speech": {
+    "default": "Sur $$, à $$: $$",
+    "tonight": "$$, à $$: $$",
+    "now": "Sur $$, à $$: $$",
+    "newError": "Données programme invalides",
+    "noProgram": "Aucun programme trouvé pour la chaîne $$",
+    "errorFetch": "Je n'arrive pas à récupérer les programmes pour le moment."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "speech": {
+    "unknownSign": "I know the twelve zodiac signs. You can ask for example: what is the horoscope for Aries, or Leo for tomorrow.",
+    "today": "Here is today's horoscope for $$.",
+    "tomorrow": "Here is tomorrow's horoscope for $$.",
+    "error": "Horoscope error",
+    "errorFetch": "I can't retrieve the horoscope right now."
+  }
+}
