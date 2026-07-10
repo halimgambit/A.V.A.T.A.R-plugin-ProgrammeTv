@@ -21,7 +21,7 @@ The `ProgrammeTV` plugin relies solely on the system's available languages.
 
  <table style="border: none;">
   <tr>
-    <td style="border: none;"><img src="ProgrammeTV/assets/images/ProgrammeTV.png" alt="ProgrammeTV Logo" width="120"></td>
+    <td style="border: none;"><img src="ProgrammeTV/assets/images/ProgrammeTV.png" alt="ProgrammeTv Logo" width="120"></td>
     <td style="border: none;">
       <h1 style="margin: 0;color: brown;">ProgrammeTV</h1>
       <h3 style="margin: 0;">Get Program Tv</h3>
