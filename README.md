@@ -1,5 +1,7 @@
 # A.V.A.T.A.R-plugin-programmeTV
 
+Consultez votre programme TV de ce soir et en ce moment
+
 - This plugin is an add-on for the [A.V.A.T.A.R](https://avatar-home-automation.github.io/docs) framework. 
 
 
