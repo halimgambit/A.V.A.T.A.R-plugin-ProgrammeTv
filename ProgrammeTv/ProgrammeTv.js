@@ -19,7 +19,7 @@ async function downloadXMLTV() {
         const xmlText = await response.text();
         fs.writeFileSync(XMLTV_FILE, xmlText, "utf8");
 
-        info("[ProgrammeTv] Nouveau fichier guide.xml enregistré avec succès.");
+        infoGreen("[ProgrammeTv] Nouveau fichier guide.xml enregistré avec succès.");
         return true;
     } catch (err) {
         error("[ProgrammeTv] Échec du téléchargement automatique :", err.message);
@@ -29,9 +29,27 @@ async function downloadXMLTV() {
 
 async function loadXMLTV() {
     try {
+        let forceDownload = false;
+
         if (!fs.existsSync(XMLTV_FILE)) {
+            forceDownload = true;
+        } else {
+            // Vérification de l'âge du fichier (si plus vieux que 24h, on retélécharge)
+            const stats = fs.statSync(XMLTV_FILE);
+            const now = new Date().getTime();
+            const fileAgeMs = now - stats.mtime.getTime();
+            const twentyFourHoursMs = 24 * 60 * 60 * 1000;
+
+            if (fileAgeMs > twentyFourHoursMs) {
+                info("[ProgrammeTv] Le guide local a plus de 24 heures. Mise à jour requise.");
+                forceDownload = true;
+            }
+        }
+
+        if (forceDownload) {
             const success = await downloadXMLTV();
-            if (!success) return false;
+            // Si le site est down, on tente quand même de lire le vieux fichier au lieu de planter
+            if (!success && !fs.existsSync(XMLTV_FILE)) return false;
         }
 
         const xml = fs.readFileSync(XMLTV_FILE, "utf8");
@@ -49,7 +67,6 @@ async function loadXMLTV() {
                 ? targetData.programme 
                 : (targetData.programme ? [targetData.programme] : []);
 
-            // Indexation en mémoire : Regroupement par ID de chaîne
             const tempMap = new Map();
             for (const prog of programsList) {
                 if (!prog.channel) continue;
@@ -60,7 +77,7 @@ async function loadXMLTV() {
             }
             
             XMLTV_INDEXED_PROGRAMS = tempMap;
-            info("[ProgrammeTv] XMLTV local chargé et indexé avec succès en mémoire globale.");
+            infoGreen("[ProgrammeTv] XMLTV local chargé et indexé avec succès en mémoire globale.");
             return true;
         }
         return false;
